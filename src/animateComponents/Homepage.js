@@ -1,13 +1,25 @@
+import "../homepage.css"
 import React from "react";
 import {Link} from "react-router-dom";
 import { motion } from "framer-motion";
 
-const Homepage = ()=>{
 
+const squareAnimation = {
+    initial:{
+        opacity:0,
+    },
+    animation:{
+        opacity:1
+    }
+}
+const Homepage = ()=>{
     return(
-        <div className="homeDiv">
+        <motion.div className="homeDiv">
             <div className="left">
-                <div className="contents">
+                <motion.div className="contents"
+                           initial={{y:-500}}
+                           animate={{y:0}}
+                           transition={{delay:0.5, type:"spring"}}>
                     <h1>Hi, I am Kyle,<br></br> A Full Stack Web Developer</h1>
                     <div className="social-container">
                         <div className="social">
@@ -32,18 +44,40 @@ const Homepage = ()=>{
                             </a>
                         </div>
                     </div>
-                </div>
+                </motion.div>
+                <motion.div 
+                initial={squareAnimation.initial}
+                variants={squareAnimation} 
+                animate={squareAnimation.animation} 
+                transition={{delay:1, duration:3}}
+                className="green-square"/>
             </div>
             <div className="right">
-                <header>
+                <motion.header
+                    initial={{opacity:0}}
+                    animate={{opacity:1}}
+                    transition={{delay: 1,duration:1}}
+                >
                     <nav>
-                        <Link to="/about"><h2>About</h2></Link>
-                        <Link to="/contact"><h2>Contact</h2></Link>
-                        <Link to="/projects"><h2>Projects</h2></Link>
+                        <Link to="/about"><h4>About</h4></Link>
+                        <Link to="/contact"><h4>Contact</h4></Link>
+                        <Link to="/projects"><h4>Projects</h4></Link>
                     </nav>
-                </header>
+                </motion.header>
+                <motion.div           
+                initial={squareAnimation.initial}
+                variants={squareAnimation} 
+                animate={squareAnimation.animation} 
+                transition={{delay:2, duration:3}}className="blue-square"/>
+                <motion.div 
+                initial={squareAnimation.initial}
+                variants={squareAnimation} 
+                animate={squareAnimation.animation} 
+                transition={{delay:3, duration:3}}className="red-square"/>
+                <span className="copyright">© Kyle Li</span>
             </div>
-        </div>
+            
+        </motion.div>
     )
 }
 
