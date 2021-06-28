@@ -1,13 +1,12 @@
 import React from "react";
 import {Switch, Route, useLocation} from "react-router-dom";
 import Homepage from './animateComponents/Homepage';
-import Aboutpage from "./animateComponents/Aboutpage";
+import Aboutpage from "./animateComponents/About/Aboutpage";
 import {AnimatePresence} from "framer-motion";
 
 function App() {
   const location = useLocation();
   return (
-    <div className="allContents">
       <AnimatePresence>
         <Switch location={location} key={location.key}>
           <Route exact path="/">
@@ -18,7 +17,6 @@ function App() {
           </Route>
         </Switch>
       </AnimatePresence>
-    </div>
   );
 }
 
