@@ -1,4 +1,7 @@
 
+/* *{
+    border: 1px solid gray;
+} */
 .about-section{
     display: flex;
     flex-direction: column;
@@ -19,8 +22,30 @@
 
 .bio-div{
     margin-top: 7rem;
+    display: flex;
 }
 .bio{
     font-size: 1.85rem;
     margin-left: 2.5rem;
+}
+
+.green-square{
+    position: absolute;
+    background-color: #B3E283;
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    left: 10rem;
+    bottom: 4rem;
+}
+
+.red-squareAbout{
+    position: absolute;
+    left: 35rem;
+    top:4rem;
+
+}
+
+.z-index{
+    z-index: -10;
 }

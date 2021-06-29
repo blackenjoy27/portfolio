@@ -1,4 +1,4 @@
-import "../homepage.css"
+import "./homepage.css"
 import React from "react";
 import {Link} from "react-router-dom";
 import { motion } from "framer-motion";
@@ -50,7 +50,7 @@ const Homepage = ()=>{
                     variants={squareAnimation} 
                     animate={squareAnimation.animation} 
                     transition={{delay:1, duration:3}}
-                    className="green-square"/>
+                    className="green-rectangle"/>
                 </div>
                 <div className="right">
                     <motion.header
@@ -65,15 +65,15 @@ const Homepage = ()=>{
                         </nav>
                     </motion.header>
                     <motion.div           
-                    initial={squareAnimation.initial}
-                    variants={squareAnimation} 
-                    animate={squareAnimation.animation} 
-                    transition={{delay:2, duration:3}}className="blue-square"/>
+                        initial="initial"
+                        variants={squareAnimation} 
+                        animate="animation" 
+                        transition={{delay:2, duration:3}}className="blue-square"/>
                     <motion.div 
-                    initial={squareAnimation.initial}
-                    variants={squareAnimation} 
-                    animate={squareAnimation.animation} 
-                    transition={{delay:3, duration:3}}className="red-square"/>
+                        initial={squareAnimation.initial}
+                        variants={squareAnimation} 
+                        animate={squareAnimation.animation} 
+                        transition={{delay:3, duration:3}}className="red-square"/>
                     <span className="copyright">© Kyle Li 2021</span>
                 </div>
                 

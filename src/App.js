@@ -1,6 +1,6 @@
 import React from "react";
 import {Switch, Route, useLocation} from "react-router-dom";
-import Homepage from './animateComponents/Homepage';
+import Homepage from './animateComponents/Homepage/Homepage';
 import Aboutpage from "./animateComponents/About/Aboutpage";
 import {AnimatePresence} from "framer-motion";
 

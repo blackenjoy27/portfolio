@@ -56,7 +56,7 @@ nav a{
   border-radius: 25px;
 }
 
-.green-square{
+.green-rectangle{
   position: absolute;
   background-color: #B3E283;
   z-index: -1;
