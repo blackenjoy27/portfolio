@@ -21,7 +21,7 @@ const squareAnimation = {
 const Aboutpage = ()=>{
     return(
         <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1}} className="about-section">
-            <div>
+            <div className="top">
                 <motion.header
                     initial={{opacity:0}}
                     animate={{opacity:1}}
@@ -30,7 +30,6 @@ const Aboutpage = ()=>{
                 >
                     <nav className="about-nav">
                         <Link to="/"><h4>Home</h4></Link>
-                        <Link to="/contact"><h4>Contact</h4></Link>
                         <Link to="/projects"><h4>Projects</h4></Link>
                     </nav>
                 </motion.header>
@@ -55,9 +54,6 @@ const Aboutpage = ()=>{
                     As an <strong>full stack web developer</strong>, I like to design the the website <br></br> 
                     in a way that the user could have a smooth experience, and I like to take greate care <br></br> 
                     of the data in the most efficient way.  <br></br>
-
-                    <br></br>
-
                 </p>
                 <motion.div 
                     initial="initial"

@@ -1,27 +1,32 @@
 
-/* *{
-    border: 1px solid gray;
-} */
 .about-section{
     display: flex;
     flex-direction: column;
+    
 }
 
-.about-header{
+.top{
     width: 50%;
     margin-left: 50%;
+}
+.about-header{
+    width: 40%;
+    margin-left: 60%;
 }
 
 .about-nav{
     display: flex;
-    width: 70%;
+    width: 100%;
     justify-content: space-evenly;
-    margin-top: 1rem;
-    margin-left: 30%;
 }
 
+.about-nav a{
+    padding: 0 1rem;
+}
+
+
 .bio-div{
-    margin-top: 7rem;
+    margin-top: 5rem;
     display: flex;
 }
 .bio{
