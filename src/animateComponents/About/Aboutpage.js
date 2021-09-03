@@ -20,7 +20,7 @@ const squareAnimation = {
 
 const Aboutpage = ()=>{
     return(
-        <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1}} className="about-section">
+        <motion.div exit={{transition:"easeInOut"}} initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1}} className="about-section">
             <div className="top">
                 <motion.header
                     initial={{opacity:0}}
@@ -46,7 +46,7 @@ const Aboutpage = ()=>{
                 <p className="bio">
                     <h1>A little about me</h1>
                     I have been learning how to write code 
-                    <br></br>for more than two years, struggling with varies problem 
+                    <br></br>for more than two years, struggling with varies problems 
                     <br></br>during the adventure. I found out that I want to become a <strong>full stack web developer</strong>.<br></br> 
                     
                     <br></br>
