@@ -1,29 +1,33 @@
 import "./Projects.css"
-import React, {useState} from "react";
-import {motion} from "framer-motion";
-import {Link} from "react-router-dom";
+import React, { useState } from "react";
+import Project from "./Project";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const allProjects = [
     {
-        projectName:"Potluck Planner",
-        liveVersion:"https://frontend-17dulzzug-blackenjoy27.vercel.app",
-        description:[
-            "Opening potluck events for client who wants to share their own made dishes",
-            "Secure the data by having the authentication API to validate via JWT",
-            "Interacting with back-end database"
-        ]
-    }
+        color: "redOne",
+        projectName: "Potluck Planner",
+        liveVersion: "https://frontend-17dulzzug-blackenjoy27.vercel.app",
+        description: "Potluck Planner is an app that allows organizers and attendees to efficiently plan their potluck events."
+    },
+    {
+        color: "blueOne",
+        projectName: "Family Promises",
+        liveVersion: "https://a.familypromiseservicetracker.dev/login",
+        description: "Family Promises is an app that helps homeless families going through their hardship and prevent them from becoming homeless again."
+    },
 ]
 const Projects = () => {
     const [projects, setProjects] = useState(allProjects);
     const [index, setIndex] = useState(0);
-    return(
-        <motion.div exit={{transition:"easeInOut"}}>
+    return (
+        <motion.div exit={{ transition: "easeInOut" }}>
             <div className="top">
                 <motion.header
-                    initial={{opacity:0}}
-                    animate={{opacity:1}}
-                    transition={{duration:1}}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1 }}
                     className="about-header"
                 >
                     <nav className="about-nav">
@@ -32,17 +36,10 @@ const Projects = () => {
                     </nav>
                 </motion.header>
             </div>
-            <div className="projectDiv">
-                <h1 className="projectLink">
-                    <a href={projects[index].liveVersion}>
-                        {projects[index].projectName}
-                    </a>
-                </h1>
-                <ul>
-                    <li><h2>{projects[index].description[0]}</h2></li>
-                    <li><h2>{projects[index].description[1]}</h2></li>
-                    <li><h2>{projects[index].description[2]}</h2></li>
-                </ul>
+            <div>
+                {projects && projects.map(project => {
+                    return <Project project={project} />
+                })}
             </div>
         </motion.div>
     )

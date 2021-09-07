@@ -1,22 +1,37 @@
-
-.projectDiv{
-    display: flex;
-    z-index: 999;
-    width: 50%;
-    height: 50vh;
-    border: 2px solid grey;
-    margin: 5% auto;
-    border-radius: 8px;
-    box-shadow: 5px 10px;
-    flex-direction: column;
+.projectDiv {
+  display: flex;
+  z-index: 999;
+  width: 50%;
+  height: 20vh;
+  border: 2px solid grey;
+  margin: 5% auto;
+  border-radius: 8px;
+  flex-direction: column;
 }
 
-.projectLink{
-    display: flex;
-    height: 20%;
-    margin-left: 2rem;
+.projectLink {
+  display: flex;
+  height: 20%;
+  margin-left: 2rem;
 }
 
-.projectLink a{
-    margin: auto;
+.projectLink a {
+  margin: auto;
+}
+
+.projectP {
+  width: 80%;
+  margin: auto;
+}
+
+.redOne {
+  box-shadow: 5px 10px #ff616d;
+}
+
+.greeOne {
+  box-shadow: 5px 10px #b3e283;
+}
+
+.blueOne {
+  box-shadow: 5px 10px cornflowerblue;
 }
