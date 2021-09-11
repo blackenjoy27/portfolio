@@ -158,3 +158,25 @@ nav a {
     width: 100%;
   }
 }
+
+@media (max-width: 500px) {
+  nav {
+    width: 40rem;
+    margin-left: 10%;
+  }
+  .shortBio {
+    font-size: 5vw;
+    margin-left: 2.2rem;
+  }
+  .green-rectangle {
+    width: 22vw;
+    height: vw;
+  }
+  .square {
+    width: 22vw;
+    height: 22vw;
+  }
+  .social {
+    width: 6vw;
+  }
+}
