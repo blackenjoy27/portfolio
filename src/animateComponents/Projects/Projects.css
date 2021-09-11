@@ -4,15 +4,29 @@
   width: 50%;
   height: 20vh;
   border: 2px solid grey;
-  margin: 5% auto;
+  margin: 3% auto;
   border-radius: 8px;
   flex-direction: column;
+  background-color: #ffffff;
+}
+.projects {
+  height: 100vh;
+  background-size: cover;
+}
+
+.projectHeader {
+  padding-top: 1.5rem;
+  width: 100%;
+  display: flex;
+  height: 10%;
+  align-items: center;
 }
 
 .projectLink {
   display: flex;
   height: 20%;
   margin-left: 2rem;
+  font-size: 2vw;
 }
 
 .projectLink a {
@@ -22,16 +36,57 @@
 .projectP {
   width: 80%;
   margin: auto;
+  font-size: 1.75vw;
 }
 
 .redOne {
   box-shadow: 5px 10px #ff616d;
 }
 
-.greeOne {
+.greenOne {
   box-shadow: 5px 10px #b3e283;
 }
 
 .blueOne {
   box-shadow: 5px 10px cornflowerblue;
+}
+.potluck {
+}
+.familyPromise {
+}
+.tech {
+  background-image: url("/src/imgs/tech-wallpaper-4.jpeg");
+}
+
+@media (min-width: 1400px) {
+  .projectP {
+    font-size: 1.5vw;
+  }
+}
+
+@media (max-width: 1400px) {
+  .projectP {
+    font-size: 1.3vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .top {
+    margin-bottom: 4rem;
+  }
+  .projectP {
+    font-size: 1.5vw;
+  }
+  .projectLink {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .projectP {
+    font-size: 1.75vw;
+  }
+  .projectLink {
+    font-size: 3vw;
+  }
 }

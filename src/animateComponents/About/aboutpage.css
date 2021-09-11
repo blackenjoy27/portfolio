@@ -82,3 +82,13 @@
     right: 3rem;
   }
 }
+
+@media (min-width: 1400px) {
+  .bio {
+    font-size: 2vw;
+  }
+  .about-nav {
+    width: 30%;
+    margin-left: 70%;
+  }
+}

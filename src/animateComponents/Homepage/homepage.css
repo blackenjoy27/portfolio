@@ -105,6 +105,27 @@ nav a {
   flex-direction: column;
   width: 80%;
 }
+@media (min-width: 1400px) {
+  nav {
+    width: 50%;
+    margin-left: 50%;
+  }
+  nav a {
+    border: 3px solid black;
+    font-size: 1vw;
+    padding: 1vw 2vw;
+    background-color: #ffffff;
+  }
+  .shortBio {
+    font-size: 3vw;
+  }
+}
+
+@media (min-width: 1700px) {
+  .shortBio {
+    font-size: 3vw;
+  }
+}
 
 @media (max-width: 1000px) {
   nav {
