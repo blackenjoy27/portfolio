@@ -28,7 +28,7 @@ const Projects = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1 }}
-                    className="about-header"
+                    className="Header"
                 >
                     <nav className="about-nav">
                         <Link to="/"><h4>Home</h4></Link>

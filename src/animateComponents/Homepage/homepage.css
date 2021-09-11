@@ -22,7 +22,7 @@
 }
 
 .social {
-  width: 40px;
+  width: 2.75vw;
   height: 40px;
   border-radius: 50%;
 }
@@ -36,21 +36,21 @@ svg:hover path {
 }
 
 .right {
-  width: 50%;
+  width: 50vw;
 }
-header {
+.Header {
   margin-top: 1.5rem;
   width: 100%;
   display: flex;
   height: 10%;
+  align-items: center;
 }
 
-.blocker {
-  width: 60%;
-}
 nav {
   display: flex;
-  width: 40%;
+  width: 20vw;
+  margin-left: 60%;
+  height: 7vh;
   justify-content: space-evenly;
 }
 
@@ -63,6 +63,10 @@ nav a {
   padding: 1rem 1rem;
 }
 
+.square {
+  width: 15vw;
+  height: 15vw;
+}
 .green-rectangle {
   position: absolute;
   background-color: #b3e283;
@@ -72,19 +76,15 @@ nav a {
   height: 7vw;
   border-radius: 20% 20% 0 0;
 }
-.red-square {
+.red {
   background-color: #ff616d;
   position: absolute;
-  width: 15vw;
-  height: 15vw;
   border-radius: 20%;
   right: 2rem;
 }
-.blue-square {
+.blue {
   background-color: cornflowerblue;
   margin-top: 1rem;
-  width: 15vw;
-  height: 15vw;
   border-radius: 20%;
 }
 
@@ -94,4 +94,67 @@ nav a {
   position: absolute;
   bottom: 0;
   right: 2rem;
+}
+
+.shortBio {
+  font-size: 2.5vw;
+}
+.contents {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+}
+
+@media (max-width: 1000px) {
+  nav {
+    width: 30rem;
+    margin-left: 50%;
+  }
+  .shortBio {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 800px) {
+  nav {
+    width: 30rem;
+    margin-left: 30%;
+  }
+  .shortBio {
+    font-size: 3vw;
+  }
+  .green-rectangle {
+    width: 18vw;
+    height: 8vw;
+  }
+  .square {
+    width: 18vw;
+    height: 18vw;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    width: 30rem;
+    margin-left: 30%;
+  }
+  .shortBio {
+    font-size: 4vw;
+    margin-left: 2.2rem;
+  }
+  .green-rectangle {
+    width: 20vw;
+    height: 8vw;
+  }
+  .square {
+    width: 20vw;
+    height: 20vw;
+  }
+  .social {
+    width: 4vw;
+  }
+  .social-container {
+    width: 100%;
+  }
 }
