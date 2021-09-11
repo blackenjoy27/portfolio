@@ -60,12 +60,13 @@ const Aboutpage = () => {
                     variants={squareAnimation}
                     animate="animation"
                     transition={{ duration: 5 }}
-                    className="green-square z-index" />
+                    className="green square z-index" />
                 <motion.div
                     initial="initial"
                     variants={squareAnimation}
                     animate="bsquareAnimation"
-                    transition={{ duration: 6 }} className="blue square z-index" />
+                    transition={{ duration: 6 }}
+                    className="blue square z-index blue-squareAbout" />
             </div>
 
         </motion.div>

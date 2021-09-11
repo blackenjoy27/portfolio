@@ -1,3 +1,6 @@
+* {
+  border: solid 1px grey;
+}
 .about-section {
   display: flex;
   flex-direction: column;
@@ -31,11 +34,9 @@
   margin-left: 2.5rem;
 }
 
-.green-square {
+.green {
   position: absolute;
   background-color: #b3e283;
-  width: 15vw;
-  height: 15vw;
   border-radius: 20%;
   left: 10rem;
   bottom: 4rem;
@@ -46,7 +47,43 @@
   left: 35rem;
   top: 4rem;
 }
+.blue-squareAbout {
+  position: absolute;
+  right: 10rem;
+}
 
 .z-index {
   z-index: -10;
+}
+
+@media (max-width: 1115px) {
+  .bio-div {
+    width: 100%;
+  }
+  .bio {
+    width: 80%;
+  }
+  .red-squareAbout {
+    left: 20rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .red-squareAbout {
+    left: 15rem;
+  }
+  .bio {
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 630px) {
+  .red-squareAbout {
+    left: 5rem;
+  }
+}
+
+@media (max-width: 500px) {
+}
+@media (max-width: 400px) {
 }
