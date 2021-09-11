@@ -10,14 +10,14 @@ const allProjects = [
         projectName: "Potluck Planner",
         liveVersion: "https://frontend-17dulzzug-blackenjoy27.vercel.app",
         description: "Potluck Planner is an app that allows organizers and attendees to efficiently plan their potluck events.",
-        backGroundUrl: "/tech-wallpaper-2.jpeg",
+        bgClass: "potluck",
     },
     {
         color: "blueOne",
         projectName: "Family Promises",
         liveVersion: "https://a.familypromiseservicetracker.dev/login",
         description: "Family Promises is an app that helps homeless families going through their hardship and prevent them from becoming homeless again.",
-        backGroundUrl: "/tech-wallpaper-2.jpeg",
+        bgClass: "familyPromise",
     },
     {
         color: "greenOne",

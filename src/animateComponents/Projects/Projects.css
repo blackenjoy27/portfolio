@@ -25,8 +25,9 @@
 .projectLink {
   display: flex;
   height: 20%;
-  margin-left: 2rem;
   font-size: 2vw;
+  width: 40%;
+  margin: auto;
 }
 
 .projectLink a {
@@ -51,8 +52,10 @@
   box-shadow: 5px 10px cornflowerblue;
 }
 .potluck {
+  background-image: url("/src/imgs/picnic-widescreen-hd-wallpaper-60754-62559-hd-wallpapers.jpeg");
 }
 .familyPromise {
+  background-image: url("/src/imgs/houses_water_buildings_199265_3840x2160.jpeg");
 }
 .tech {
   background-image: url("/src/imgs/tech-wallpaper-4.jpeg");
@@ -84,7 +87,7 @@
 
 @media (max-width: 500px) {
   .projectP {
-    font-size: 1.75vw;
+    font-size: 2.25vw;
   }
   .projectLink {
     font-size: 3vw;
