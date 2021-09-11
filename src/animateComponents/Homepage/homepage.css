@@ -180,3 +180,16 @@ nav a {
     width: 6vw;
   }
 }
+@media (max-width: 400px) {
+  nav {
+    width: 30rem;
+    margin-left: 0%;
+  }
+  .shortBio {
+    font-size: 4vw;
+    margin-left: 1.5rem;
+  }
+  .blue {
+    margin-bottom: 3rem;
+  }
+}
