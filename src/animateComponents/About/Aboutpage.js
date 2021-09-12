@@ -52,7 +52,7 @@ const Aboutpage = () => {
                     <br></br>
 
                     As an <strong>full stack web developer</strong>, I like to design the the website <br></br>
-                    in a way that the user could have a smooth experience, and I like to take greate care <br></br>
+                    in a way that the user could have a smooth experience, and I like to take great care <br></br>
                     of the data in the most efficient way.  <br></br>
                 </p>
                 <motion.div

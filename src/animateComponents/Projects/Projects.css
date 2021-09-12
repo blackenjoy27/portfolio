@@ -39,6 +39,9 @@
   margin: auto;
   font-size: 1.75vw;
 }
+.about-nav a {
+  background-color: #ffffff;
+}
 
 .redOne {
   box-shadow: 5px 10px #ff616d;
