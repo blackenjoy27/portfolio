@@ -22,7 +22,7 @@ const allProjects = [
     {
         color: "greenOne",
         projectName: "Use My Tech",
-        liveVersion: "https://use-my-tech-fe-5bkyvf229-blackenjoy27.vercel.app",
+        liveVersion: "https://use-my-tech-fe-blackenjoy27.vercel.app",
         description: "Use My Tech is an app that provides the most effient way to get the tech from other people for a short time usage. All users can choose to be a borrower or a renter",
         bgClass: "tech",
 
