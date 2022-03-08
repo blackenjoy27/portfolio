@@ -20,7 +20,7 @@ const Homepage = () => {
                     initial={{ y: -1000 }}
                     animate={{ y: 0 }}
                     transition={{ delay: 0.5, type: "spring", stiffness: 80, duration: 3 }}>
-                    <h1 className="shortBio">Hi, I am Kyle,<br></br> A Full Stack Web Developer</h1>
+                    <h1 className="shortBio">Hi, I am Xunxin,<br></br> A Full Stack Web Developer</h1>
                     <div className="social-container">
                         <div className="social">
                             <a href="https://github.com/blackenjoy27?tab=repositories">
@@ -83,7 +83,7 @@ const Homepage = () => {
                     variants={squareAnimation}
                     animate={squareAnimation.animation}
                     transition={{ delay: 3, duration: 3 }} className="red square" />
-                <span className="copyright">© Kyle Li 2021</span>
+                <span className="copyright">© Xunxin Li 2022</span>
             </div>
 
         </motion.div>
